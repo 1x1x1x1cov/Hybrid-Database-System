@@ -44,13 +44,20 @@ A comprehensive web-based medical management system for hospitals and clinics, b
 - PDF report generation using FPDF
 - Department metrics and statistics
 - Patient medical history reports
-
+### Automated Report Delivery (n8n Integration)
+- Automated export workflow using n8n
+- API-triggered report generation via generate_report.php
+- n8n retrieves generated PDF/CSV files using the returned filepath or download URL
+- Automatic email delivery of reports through Gmail
+- Fully event-driven pipeline requiring no manual file transfer
+- Demonstrates integration of backend API → filesystem → external services
 ## Technology Stack
 
 - **Backend**: PHP 7.x+
 - **Database**: MySQL (MariaDB)
 - **PDF Generation**: FPDF library
 - **Frontend**: HTML5, CSS3, JavaScript
+- **n8n** :automated delivery of report to Email
 - **Authentication**: Session-based with password hashing
 
 ## Project Structure
